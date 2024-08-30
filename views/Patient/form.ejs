@@ -1,54 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Your Appointment</title>
-    <link rel="stylesheet" href="/css/styles.css"/>
-</head>
-<body>
-    <div class="container">
-        <header class="header">
-            <div class="brand">Sarva Svastha</div>
-            <nav class="nav">
-                <a href="#" class="nav-link">Home</a>
-                <a href="#" class="nav-link">Appointment Scheduler</a>
-                <a href="#" class="nav-link">Help & Support</a>
-                <button class="login-button">Login/Register</button>
-            </nav>
-        </header>
-        <div class="sidebar">
-            <a href="#" class="sidebar-link active">New appointment</a>
-            <a href="#" class="sidebar-link">Cancel appointment</a>
-        </div>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-        <main class="main-content">
+    <link rel="stylesheet" href="/css/styles/appoint-global.css" />
+    <link rel="stylesheet" href="/css/styles/appoint-iindex.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Anek Devanagari:wght@500&display=swap"
+    />
+  </head>
+  <body>
+    <div class="upper-navbar">
+      <div class="navbar-section">
+          <!-- <img src="images/image 4.png" alt="India Emblem" class="emblem"> -->
+           <div class="photo"></div>
+          <div class="text">
+              <h2>Government of National Capital Territory</h2>
+              <p>राष्ट्रीय राजधानी क्षेत्र दिल्ली सरकार</p>
+          </div>
+      </div>
+      <div class="navbar-section">
+          <img src="images/Frame 60.png" alt="Delhi Government Logo" class="delhi-logo">
+          <img src="images/image 6.png" alt="Election Logo" class="election-logo">
+      </div>
+  </div>
+
+  <header class="navbar">
+      <div class="brand">
+          <div class="brand-name">Sarva</div>
+          <div class="brand-tagline">Svastha</div>
+      </div>
+      <nav class="nav-links">
+          <a href="/home" class="nav-link nav-link-home">Home</a>
+          <a href="/appointmentnew" class="nav-link nav-link-appointment">OPD Registration</a>
+          <a href="#" class="nav-link nav-link-help">Help Support</a>
+      </nav>
+      <div class="nav-right">
+          <div class="login-button">
+              <a href="/loginpage" class="nav-link nav-link-home login-text">Login/Register</a>
+              <!-- <span class="login-text">Login/Register</span> -->
+          </div>
+          <div class="burger"><img src="images/hamburger.svg" alt="HamBurger" srcset=""></div>
+      </div>
+  </header>
+  <div class="hero">
+
+      <div class="appointment-options">
+        <div class="appointment-options-child"></div>
+        <button class="appointment-types">
+          <div class="new-appointment2">New appointment</div>
+        </button>
+        <div class="appointment-types1">
+          <a class="appointment-status1">Appointment status</a>
+        </div>
+        <div class="appointment-types1">
+          <a class="appointment-status1">Bed Availability</a>
+        </div>
+        <div class="appointment-types1">
+          <a class="appointment-status1">Cancel appointment</a>
+        </div>
+      </div>
+
+    <div class="section2">
+          <main class="main-content">
             <h1>Book Your Appointment</h1>
             <h2>NEW APPOINTMENT</h2>
-            <form method="post" action="/homepage" class="appointment-form">
-                <br><br>
-                <label for="department">Department</label>
-                <input type="text" name="department" id="department" placeholder="Enter Department" required/>
-                <label for="hospital">Hospital</label>
-                <input type="text" name="hospital" id="hospital" placeholder="Enter Hospital" required/>
-                <label for="doctor">Doctor</label>
-                <input type="text" name="doctor" id="doctor" placeholder="Enter Doctor"/>
-                  <label for="date" name="date">Select Date</label>
-                  <input type="date" name="date" id="date" required/>
-                  <label for="department">Patient</label>
-                  <input name="patientname" placeholder="Enter Patient Name" type="text" required/> 
-                  <label for="emailId">Email</label>
-               <input name="emailId" placeholder="Enter EmailId" type="text" required/> 
-               <label for="mobile">Mobile NO.</label>
-               <input name="mobile" placeholder="Enter mobile" type="number" required/> 
-               <label for="age">Age</label>
-               <input name="age" placeholder="Enter age" type="number" required/> 
-               <label for="Gender">Gender</label>
-               <input name="Gender" placeholder="Enter Gender" required type="text"/> 
-               <br/>  <br/>
-                  <button type="submit">Submit</button>
-            </form>
+             
+
+<form method="post" action="/homepage" class="appointment-form">
+    <br><br>
+    <label for="department">Department</label>
+    <input type="text" name="department" id="department" placeholder="Enter Department" required/>
+    <label for="hospital">Hospital</label>
+    <input type="text" name="hospital" id="hospital" placeholder="Enter Hospital" required/>
+    <label for="doctor">Doctor</label>
+    <input type="text" name="doctor" id="doctor" placeholder="Enter Doctor"/>
+      <label for="date" name="date">Select Date</label>
+      <input type="date" name="date" id="date" required/>
+      <label for="department">Patient</label>
+      <input name="patientname" placeholder="Enter Patient Name" type="text" required/> 
+      <label for="emailId">Email</label>
+   <input name="emailId" placeholder="Enter EmailId" type="text" required/> 
+   <label for="mobile">Mobile NO.</label>
+   <input name="mobile" placeholder="Enter mobile" type="number" required/> 
+   <label for="age">Age</label>
+   <input name="age" placeholder="Enter age" type="number" required/> 
+   <label for="Gender">Gender</label>
+   <input name="Gender" placeholder="Enter Gender" required type="text"/> 
+   <br/>  <br/>
+      <button type="submit" id="submit">Submit</button>
+</form>
         </main>
+
+        <div class="hos-cards-container">
+          <div class="heading-text-hospital">Hospitals Near By</div>
+          <div class="hospital-cards">
+            <div class="hospital-card-one">
+              <div class="hospital-card-one-content">
+                <div class="hospital-card-one-icon">
+                  <img
+                    class="solarhospital-line-duotone-icon"
+                    loading="lazy"
+                    alt=""
+                    src="images/solar_hospital-line-duotone.png"
+                  />
+      
+                  <div class="apollo-hospital">Apollo Hospital</div>
+                </div>
+                <i class="address-59-street"
+                  >Address: 59 street, Manik bagh, Bilawali sector,
+                  near IET campus, New Delhi</i
+                >
+                <i class="contact-00xx00xx">Contact: 00XX00XX</i>
+              </div>
+            </div>
+          </div>
+          <div class="hospital-card-two">
+            <div class="hospital-card-one">
+              <div class="hospital-card-one-content">
+                <div class="hospital-card-one-icon">
+                  <img
+                    class="solarhospital-line-duotone-icon"
+                    alt=""
+                    src="images/solar_hospital-line-duotone.png"
+                  />
+        
+                  <div class="apollo-hospital">Apollo Hospital</div>
+                </div>
+                <i class="address-59-street"
+                  >Address: 59 street, Manik bagh, Bilawali sector, near
+                  IET campus, New Delhi</i
+                >
+                <i class="contact-00xx00xx">Contact: 00XX00XX</i>
+              </div>
+            </div>
+          </div>
+          <div class="hospital-card-three">
+            <div class="hospital-card-three-content">
+              <div class="hospital-card-three-details">
+                <div class="hospital-card-one-content">
+                  <div class="hospital-card-one-icon">
+                    <img
+                      class="solarhospital-line-duotone-icon"
+                      alt=""
+                      src="images/solar_hospital-line-duotone.png"
+                    />
+        
+                    <div class="apollo-hospital">Apollo Hospital</div>
+                  </div>
+                  <i class="address-59-street"
+                    >Address: 59 street, Manik bagh, Bilawali sector,
+                    near IET campus, New Delhi</i
+                  >
+                  <i class="contact-00xx00xx">Contact: 00XX00XX</i>
+                </div>
+              </div>
+              <div class="view-more">
+                <div class="see-more">See more</div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
-</body>
+    
+  </div>
+    </div>
+   
+
+  </div>
+  </body>
 </html>
+
+
+
+

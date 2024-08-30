@@ -34,9 +34,7 @@ app.get("/" , (req,res)=>{
     res.send("Hii this is root");
 });
 app.get("/home", async(req,res)=>{
-    
-    res.render("Patient/home.ejs" );
-
+    res.render("Patient/indexpage.ejs" );
 });
 // index rout
 
@@ -89,6 +87,12 @@ app.delete("/homepage/:id" , async(req,res)=>{
     res.redirect("/homepage");
 });
 
+app.get("/appointmentnew",(req,res)=>{
+    res.render("Patient/form.ejs");
+});
+app.get("/loginpage",(req,res)=>{
+    res.render("Patient/login.ejs");
+})
 
 app.post('/homepage', async (req, res) => {
     const { patientname, emailId, mobile, age, Gender, date, department, hospital, doctor } = req.body;
@@ -115,7 +119,7 @@ app.post('/homepage', async (req, res) => {
      await appointment.save();
      console.log(appointment);
      console.log("Successfull!!");
-     res.render("Patient/appointment.ejs",{appointment,depart,Hosp,Doc});
+     res.render("Patient/paymentSuccessful.ejs",{appointment,depart,Hosp,Doc});
   });
   
 app.get("/yourappointment",async(req,res)=>{

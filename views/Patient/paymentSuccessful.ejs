@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="/css/styles/payment-global.css" />
+    <link rel="stylesheet" href="/css/styles/payment-successful.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Anek Devanagari:wght@500&display=swap"
+    />
+  </head>
+  <body>
+    <div class="payment-successful">
+      <header class="frame-header">
+        <div class="rectangle-div"></div>
+        <div class="image-4-group">
+          <img
+            class="image-4-icon2"
+            loading="lazy"
+            alt=""
+            src="./public/image-4@2x.png"
+          />
+
+          <div class="right-column">
+            <div class="govt-info">
+              <div class="government-of-national2">
+                Government of National Capital Territory
+              </div>
+              <div class="hindi-name1">
+                <div class="div2">राष्ट्रीय राजधानी क्षेत्र दिल्ली सरकार</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="middle-column">
+          <div class="middle-content">
+            <div class="image-row">
+              <img
+                class="image-5-icon2"
+                loading="lazy"
+                alt=""
+                src="./public/image-5@2x.png"
+              />
+            </div>
+            <div class="right-image-container">
+              <img
+                class="image-6-icon1"
+                loading="lazy"
+                alt=""
+                src="./public/image-6@2x.png"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="bottom-row">
+        <div class="bottom-row-child"></div>
+        <div class="sarva-svastha">
+          <a class="sarva3">Sarva</a>
+          <div class="svastha-container">
+            <a class="svastha3">Svastha</a>
+          </div>
+        </div>
+        <div class="home-options-wrapper">
+          <div class="home-options">
+            <a class="home2" href="/home">Home</a>
+            <a class="appointment-scheduler2">Appointment Scheduler</a>
+            <a class="help-support1">Help Support</a>
+          </div>
+        </div>
+        <div class="login-container-wrapper">
+          <button class="login-container">
+            <a class="loginregister4">Login/Register</a>
+          </button>
+        </div>
+      </div>
+      <main class="appointment-options-parent">
+        <div class="appointment-options">
+          <div class="appointment-options-child"></div>
+          <button class="appointment-types">
+            <div class="new-appointment2">New appointment</div>
+          </button>
+          <div class="appointment-types1">
+            <a class="appointment-status1">Appointment status</a>
+          </div>
+          <div class="appointment-types1">
+            <a class="appointment-status1">Cancel appointment</a>
+          </div>
+        </div>
+        <section class="appointment-content">
+          <div class="booking-status">
+            <div class="booking-confirmation">
+              <h2 class="book-your-appointment1">Book Your Appointment</h2>
+              <div class="new-appointment-wrapper">
+                <div class="invoice-is-sent">NEW APPOINTMENT</div>
+              </div>
+            </div>
+            <div class="success-message">
+              <div class="success-container">
+                <h2 class="your-appointment-is-container">
+                  <span>Your appointment is </span>
+                  <span class="successful">successful</span>
+                </h2>
+                <div class="invoice-info">
+                  <div class="invoice-details">
+                    <div class="invoice-is-sent">* 
+                      Invoice is sent to : <%= appointment.emailId %>
+                    </div>
+                    <div class="invoice-is-sent"><p> * Appointment Date: <%= new Date(appointment.date).toLocaleDateString('en-GB') %></p>
+                    </div>
+                    <div class="invoice-is-sent">
+                      * Doctor: <%= Doc.name %>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reminder-container-wrapper">
+              <div class="reminder-container">
+                <div class="reminder-content">
+                  <div class="reminder-icon">
+                    <img
+                      class="magelight-bulb-icon"
+                      loading="lazy"
+                      alt=""
+                      src="images/mage_light-bulb.png"
+                    />
+
+                    <div class="reminder">Reminder:</div>
+                  </div>
+                  <div class="you-need-to-container">
+                    <span>You need to generate a token number </span>
+                    <span class="min">15 min</span>
+                    <span> before reaching the hospital. The Token will </span>
+                    <span class="min">expire</span>
+                    <span> </span>
+                    <span class="min">45 mins </span>
+                    <span>after time of generation</span>
+                    <span class="min">.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,383 @@
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --seccolor : #ebebeb;
+    --color : #004094;
+    --black : #000000;
+    --green : #69D876;
+    font-family: 'Poppins';
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--seccolor);
+    color: #333;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.upper-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #fff;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.navbar-section {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-section img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.emblem {
+    height: 60px; /* Adjust this value as per the size in the image */
+}
+
+.text h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.text p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.delhi-logo, .election-logo {
+    height: 40px; /* Adjust these values as per the size in the image */
+    margin-left: 15px;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color);
+    padding: 20px;
+    color: white;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.brand-name {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.brand-tagline {
+    font-size: 1rem;
+    color: var(--green);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--seccolor);
+    color: #007bff;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.login-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color);
+}
+
+/* Main content styles */
+.main-content {
+    display: flex;
+    gap: 40px;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.header-text {
+    padding: 15px;
+    font-size: 4.5rem;
+    line-height: 1.2;
+    padding: 35px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.slider > p{
+    color: var(--black);
+    padding: 35px;
+}
+
+.titleText {
+    font-size: 3rem;
+    padding: 2.5rem;
+    margin-left: 1em;
+}
+
+.light-text {
+    font-weight: 300;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+.left {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.services{
+    display: flex;
+    gap: 55px;
+    justify-content: center;
+}
+
+.services_tank{
+    display: flex;
+    gap: 40px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.service-container {
+    background-color: var(--color);
+    color: var(--seccolor);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 25px;
+    width: 550px;
+}
+
+.service-desc{
+    gap: 10px;
+}
+
+.service-icon {
+    width: 3.6rem;
+    height: 3.6rem;
+}
+
+.service-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.service-text {
+    font-size: 1.563rem;
+    line-height: 1.5;
+}
+
+.learn-more {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: mediumseagreen;
+    cursor: pointer;
+}
+
+.aimtitle{
+    font-size: 3rem;
+    padding: 3.5rem;
+}
+
+.aimSection {
+    font-family: Arial, sans-serif;
+    background-color: var(--seccolor);
+    margin: 0;
+    padding: 0;
+}
+
+.aimcontainer {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+
+.aim-box {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--color);
+    gap: 30px;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+.circle {
+    width: 50px;
+    height: 40px;
+    background-color: #4b92f6;
+    color: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-right: 15px;
+    padding: 25px;
+}
+
+.aimSection p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Left and Right columns */
+.left-column,
+.right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    margin: 0 auto; /* Center image within its container */
+}
+
+/* Responsive styles */
+.burger{
+    display: none;
+}
+@media (max-width: 1150px) {
+    .header-text{
+        font-size: 3.1rem;
+    }
+    .service-container{
+        width: 350px;
+    }
+    
+}
+
+@media (max-width: 1024px) {
+
+    .header-text {
+        font-size: 3rem; /* Decrease text size for smaller screens */
+    }
+
+    .titleText {
+        font-size: 2.5rem; /* Adjust title size */
+        padding: 1.5rem; /* Adjust padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .header-text {
+        font-size: 2.5rem; /* Further decrease text size for smaller screens */
+    }
+
+    .hero-image {
+        max-width: 70%; /* Decrease image size to 70% of container */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar{
+        height: 40vh;
+        justify-content: flex-start;
+    }
+    .burger{
+        display: inline;
+    }
+    .nav-right{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .login-text{
+        font-size: 0.75rem;
+    }
+    .service-container {
+        width: 100%; /* Use 100% width on mobile */
+        max-width: 350px; /* Add max-width if you want to restrict */
+    }
+    .main-content{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+    .hero-image{
+        max-width: 100%;
+    }
+    .services_tank {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .aim-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid var(--color);
+        gap: 15px;
+        font-size: 20px;
+        border-radius: 8px;
+        padding: 15px;
+        margin-bottom: 20px;
+        background-color: #ffffff;
+    }
+}

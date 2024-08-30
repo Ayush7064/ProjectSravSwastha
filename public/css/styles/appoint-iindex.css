@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --seccolor : #ebebeb;
+  --color : #004094;
+  --black : #000000;
+  --green : #69D876;
+  font-family: 'Poppins';
+}
+
+.burger{
+  display: none;
+}
+
+.nav-links :nth-child(2){
+  font-weight: bold;
+}
+
+.photo{
+  background-image: url('images/image 4.png');
+}
+
+.upper-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #fff;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.navbar-section {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-section img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.emblem {
+  height: 60px; /* Adjust this value as per the size in the image */
+}
+
+.text h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.text p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.delhi-logo, .election-logo {
+  height: 40px; /* Adjust these values as per the size in the image */
+  margin-left: 15px;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color);
+  padding: 20px;
+  color: white;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.brand-name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.brand-tagline {
+  font-size: 1rem;
+  color: var(--green);
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--seccolor);
+  color: #007bff;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.login-text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color);
+}
+
+
+.main-content {
+  margin-left: 70px;
+  padding: 40px;
+  height: 100vh;
+  overflow: auto;
+}
+
+.main-content::-webkit-scrollbar{
+  display: none;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 25px;
+  max-width: 400px;
+}
+
+.appointment-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.appointment-form input[type="text"],
+.appointment-form input[type="email"],
+.appointment-form input[type="number"],
+.appointment-form input[type="date"] {
+  padding: 8px;
+  font-size: 14px;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.next-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+.sidebar {
+  background-color: #003366;
+  padding: 60px;
+  width: 200px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 100vh;
+  width: 25%;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.sidebar a{
+  font-size: 24px;
+}
+
+.sidebar-link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.sidebar-link.active {
+  font-weight: bold;
+}
+
+.appointment-types1 {
+  cursor: pointer;
+}
+
+.hero{
+  display: flex;
+}
+
+.hospitals-near-you {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: 0.05em;
+  line-height: 120%;
+  font-weight: 400;
+  font-family: inherit;
+}
+.solarhospital-line-duotone-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.apollo-hospital {
+  position: relative;
+  letter-spacing: 0.05em;
+  line-height: 120%;
+}
+.hospital-card-one-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  font-size: var(--font-size-5xl);
+}
+.address-59-street,
+.contact-00xx00xx {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+}
+.address-59-street {
+  line-height: 120%;
+}
+.contact-00xx00xx {
+  line-height: 1.375rem;
+}
+.hospital-card-one-content {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-6xl);
+}
+.hospital-card-one {
+  flex: 1;
+  border-radius: var(--br-5xs);
+  background-color: var(--neutrals-13);
+  border: 1.5px solid var(--neutrals-09);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-lgi) var(--padding-3xl);
+}
+.hospital-cards {
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 var(--padding-11xs) 0 var(--padding-7xs);
+  font-size: var(--font-size-lg);
+}
+.hospital-card-two,
+.hospital-cards,
+.hospital-list-header {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.hospital-list-header {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-6xs);
+  font-size: var(--font-size-11xl);
+}
+.hospital-card-two {
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 var(--padding-11xs) 0 0.187rem;
+}
+.hospital-card-three-details {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--neutrals-13);
+  border: 1.5px solid var(--neutrals-09);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-lgi) var(--padding-3xl);
+}
+.see-more {
+  position: relative;
+  letter-spacing: 0.05em;
+  line-height: 1.375rem;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 5.25rem;
+}
+
+.hos-cards-container{
+  display: flex;
+  width: 25rem;
+  gap: 25px;
+  flex-direction: column;
+}
+
+.section2 {
+  display: flex;
+  gap: 10rem;
+}
+
+.heading-text-hospital{
+  font-size: 2rem;
+  padding: 20px;
+}
+
+.next-button > a {
+  text-decoration: none;
+  color: white;
+}
+
+.appointment-options-child {
+  width: 373px;
+  height: 855px;
+  position: relative;
+  background-color: var(--color-darkslateblue-100);
+  display: none;
+  max-width: 100%;
+}
+.new-appointment2 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  letter-spacing: 0.05em;
+  line-height: 120%;
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  color: var(--neutrals-13);
+  text-align: left;
+}
+.appointment-types {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs) var(--padding-lgi);
+  background-color: var(--color-darkslateblue-200);
+  align-self: stretch;
+  border-radius: var(--br-6xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  white-space: nowrap;
+  z-index: 2;
+}
+.appointment-types:hover {
+  background-color: var(--color-steelblue);
+}
+.appointment-status1 {
+  text-decoration: none;
+  position: relative;
+  letter-spacing: 0.05em;
+  line-height: 120%;
+  font-weight: 500;
+  color: inherit;
+}
+.appointment-options,
+.appointment-types1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.appointment-types1 {
+  align-self: stretch;
+  border-radius: var(--br-2xs);
+  flex-direction: row;
+  padding: var(--padding-5xs) var(--padding-lgi);
+  z-index: 2;
+}
+.appointment-options {
+  height: 855px;
+  width: 373px;
+  background-color: var(--color-darkslateblue-100);
+  flex-direction: column;
+  padding: var(--padding-91xl) 0 var(--padding-91xl) var(--padding-56xl);
+  box-sizing: border-box;
+  gap: var(--gap-13xl);
+  min-width: 373px;
+  max-width: 100%;
+  z-index: 1;
+  font-size: 22px;
+  gap: 15px;
+  color: white;
+}
+
+#submit{
+  height: 3rem;
+  border-radius: 0.5rem;
+  background-color: #004094;
+  width: 50%;
+  color: white;
+  font: 500;
+  font-size: 1.25rem;
+}
