@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Appointment</title>
+    <link rel="stylesheet" href="/css/styles.css"/>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="brand">Sarva Svastha</div>
+            <nav class="nav">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Appointment Scheduler</a>
+                <a href="#" class="nav-link">Help & Support</a>
+                <button class="login-button">Login/Register</button>
+            </nav>
+        </header>
+        <div class="sidebar">
+            <a href="#" class="sidebar-link active">New appointment</a>
+            <a href="#" class="sidebar-link">Cancel appointment</a>
+        </div>
+
+        <main class="main-content">
+            <h1>Book Your Appointment</h1>
+            <h2>NEW APPOINTMENT</h2>
+            <form method="post" action="/homepage" class="appointment-form">
+                <br><br>
+                <label for="department">Department</label>
+                <input type="text" name="department" id="department" placeholder="Enter Department" required/>
+                <label for="hospital">Hospital</label>
+                <input type="text" name="hospital" id="hospital" placeholder="Enter Hospital" required/>
+                <label for="doctor">Doctor</label>
+                <input type="text" name="doctor" id="doctor" placeholder="Enter Doctor"/>
+                  <label for="date" name="date">Select Date</label>
+                  <input type="date" name="date" id="date" required/>
+                  <label for="department">Patient</label>
+                  <input name="patientname" placeholder="Enter Patient Name" type="text" required/> 
+                  <label for="emailId">Email</label>
+               <input name="emailId" placeholder="Enter EmailId" type="text" required/> 
+               <label for="mobile">Mobile NO.</label>
+               <input name="mobile" placeholder="Enter mobile" type="number" required/> 
+               <label for="age">Age</label>
+               <input name="age" placeholder="Enter age" type="number" required/> 
+               <label for="Gender">Gender</label>
+               <input name="Gender" placeholder="Enter Gender" required type="text"/> 
+               <br/>  <br/>
+                  <button type="submit">Submit</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

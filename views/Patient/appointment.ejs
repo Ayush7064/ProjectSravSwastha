@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Details</title>
+</head>
+<body>
+    <h1>Appointment Details</h1>
+
+    <p><strong>Patient Name:</strong> <%= appointment.patientname %></p>
+    <p><strong>Email ID:</strong> <%= appointment.emailId %></p>
+    <p><strong>Mobile:</strong> <%= appointment.mobile %></p>
+    <p><strong>Age:</strong> <%= appointment.age %></p>
+    <p><strong>Gender:</strong> <%= appointment.Gender %></p>
+    <p><strong>Appointment Date:</strong> <%= appointment.date.toDateString() %></p>
+    <p><strong>Department:</strong> <%= depart.name %></p>
+    <p><strong>Hospital:</strong> <%= Hosp.name %></p>
+    <p><strong>Doctor:</strong> <%= Doc.name %></p>
+</body>
+</html>
