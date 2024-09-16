@@ -11,7 +11,7 @@ main().then(()=>{
     console.log(err);
 })
 async function main(){
-mongoose.connect('mongodb+srv://ayushkasera7064:Mr4CtXBS28OHuMl3@cluster0.xtvw5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
+mongoose.connect('mongodb+srv://ayushkasera7064:omZ2xZEogYNvnNEd@cluster1.yom9a.mongodb.net/');
 }
 
 const addHospital=async()=>{
