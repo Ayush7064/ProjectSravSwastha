@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppStatus</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="body"> 
+    <link rel="stylesheet" href="styles/appointment-status.css"/>
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom up_nav">
+    <div class="container-fluid navbar-upper">
+      <!-- Left: Logo and Text -->
+      <div class="d-flex align-items-center">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/Image 4.png" alt="Government Logo">
+        </a>
+        <!-- Navbar Title -->
+        <div class="navbar-text">
+          <div>Government of National Capital Territory</div>
+          <div>राष्ट्रीय राजधानी क्षेत्र दिल्ली सरकार</div>
+        </div>
+      </div>
+      <!-- Right: Two Images -->
+      <div class="navbar-upper-right d-flex align-items-center">
+        <img src="images/Image 6.png" alt="Image 1">
+        <img src="images/Frame 60.png" alt="Image 2">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Lower Navbar: Logo, Centered Links, and Login in Hamburger -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary down_nav" style="
+  background-color: var(--color) !important;
+">
+    <div class="container-fluid">
+      <!-- Left: Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="images/SarvaSvasthaLogo.svg" alt="Government Logo">
+      </a>
+
+      <!-- Toggler/collapsable Button for mobile view -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Center and Right: Navbar Links in Collapsible Menu -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="appointment.html">OPD Registration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bedavailability.html">Bed Availability</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Help/Support</a>
+          </li>
+          <!-- Login Button inside the collapsible menu for smaller screens -->
+          <li class="nav-item mt-2 mt-lg-0">
+            <a class="btn btn-custom nav-link mobile-only inside_login" id="inside_button" href="login.html">Login/Register</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right: Login Button for larger screens -->
+      <a class="btn btn-custom nav-link desktop-only desk_btn" href="login.html" sstyle="
+      background-color: white;
+      color: var(--color);
+      padding: 7px 11px;
+  ">Login/Register</a>
+    </div>
+  </nav>
+    
+      <!-- Nihal works  -->
+      <br>
+      <div class="name offset-1 " style="color:black">OPD Registration</div>
+      <br>
+      <div class="main-box ">
+
+        <!-- Box   -->
+        <div class="appointments">
+            <div class="new">New Appointment
+                <hr style="border: 2px solid rgba(0, 0, 0 ,1);
+                       width:100%">
+            </div>
+            <div class="status">Appointment status/Cancellation
+                <hr style="border: 2px solid #084c9D;
+                       width:100%">
+            </div>
+            
+                     
+        </div>
+        <br> <br>
+        <!-- Part-2  -->
+        <div class="form-photo">
+            <div class="form-div">
+                <form class=" offset-3">
+                    <label class="label-tag" for="phone">Enter Your Mobile No.</label>
+                    <input class="input-phone" name="phone" placeholder="+91-98xxxxxxx2" > 
+                    <br> <br>
+                    <label  class="label-otp" for="label-otp">Generate</label>
+                    <div class="otp" name="label-otp">
+                        <div class="otp-box"></div>
+                        <div class="otp-box"></div>
+                        <div class="otp-box"></div>
+                        <div class="otp-box"></div>
+                    </div>
+                    <button class="button mt-3 ">Generate OTP</button>
+                    <button class="button mt-3 remove-line"><a href="/checkstatus">Check Status</a></button>
+                </form>
+                
+            </div>
+            <div class="photo-div">
+                <img class="photo" src="images/hospital-status.jpg" >
+            </div>
+        </div>
+      </div>
+    
+</body>
+</html>

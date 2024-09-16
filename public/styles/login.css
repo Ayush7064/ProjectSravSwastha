@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --seccolor : #ebebeb;
+    --color : #004094;
+    --black : #000000;
+    --green : #69D876;
+    font-family: 'Poppins';
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--seccolor);
+    color: #333;
+}
+
+.navbar-brand img {
+    height: 50px;
+    /* Adjust logo height */
+}
+
+.navbar-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 16px;
+}
+
+.btn-custom {
+    /* border-color: white; */
+    /* color: white; */
+    background: #EBEBEB !important;
+    padding: 8px 20px !important;
+    color: #004094 !important;
+    border-radius: 11px !important;
+}
+
+.navbar-upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.down_nav{
+    background-color: var(--color) !important;
+}
+
+.desk_btn{
+    background-color: var(--seccolor);
+    color: var(--color);
+}
+
+.red{
+    color: red;
+}
+
+.navbar-upper-right img {
+    height: 50px;
+    /* Adjust image height */
+    margin-left: 15px;
+}
+
+.navbar-lower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-center {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .navbar-upper-right img {
+        display: none;
+    }
+
+    .navbar-text {
+        font-size: 0.95rem;
+    }
+
+    .navbar-center {
+        order: 2;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar-brand img {
+        height: 35px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        /* Center align the nav items */
+        width: 100%;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+        /* Center align the collapse content */
+    }
+
+    .btn-custom.desktop-only {
+        display: none;
+        /* Hide the desktop button on smaller screens */
+    }
+
+    .btn-custom.mobile-only {
+        display: inline-block;
+        /* Show the mobile button on smaller screens */
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 993px) {
+    .btn-custom.mobile-only {
+        display: none;
+        /* Hide the mobile button on larger screens */
+    }
+
+    .btn-custom.desktop-only {
+        display: inline-block;
+        /* Show the desktop button on larger screens */
+    }
+}
+
+#inside_button {
+    color: var(--color) !important;
+    background-color: var(--seccolor);
+}
+
+body {
+    background-image: url("https://as2.ftcdn.net/v2/jpg/02/73/26/27/1000_F_273262769_hTfQYcRjQvOY86k5Ty8W8FuhkePr55ec.jpg");
+    background-size: cover;
+    background-position: center top;   
+  }
+
+  .hospitalflex{
+    border:solid #85a3e4;
+    display: flex;
+    flex-direction: initial;
+    position: relative;
+    background-color:white;
+    width:639px;
+    height:490px;
+    top: 47px;
+    left: 85px;
+    padding: 21px 190px 21px 190px;
+    gap: 8px;
+  }
+
+  .For{
+    font-size:37px;
+    font-weight: 600;
+    position: relative;
+    top:36px;
+    left:-76px;
+  }
+
+  .HC{
+    font-size:37px;
+    font-weight: 500;
+    color:rgb(20, 213, 20);
+    position: relative;
+    top:-20px;
+    left:9px;
+  }
+
+  .forhc{
+    position: relative;
+    top:auto;
+    left:auto;
+    width:auto;
+  }
+
+  .line1,.line2{
+    width:354px;
+    position: relative;
+    top:150px;
+    left:-359px;
+    font-weight:500;
+  }
+
+  .line3{
+    width:354px;
+    font-weight:500;
+    position: relative;
+    top:150px;
+    left:-259px;
+  }
+
+  .login{
+    position: relative;
+    top:279px;
+    left:-604px;
+    background-color: #305CBB;
+    color: white;
+    border-radius: 1px;
+    height: 41px;
+    width: 95px;
+    border: white;
+  }
+
+  .line4{
+    width: 207px;
+    height: 100px;
+    position: relative;
+    top:325px;
+    left:-799px;
+  }
+
+  .reg{
+    width: 207px;
+    height: 100px;
+    position: relative;
+    top:224px;
+    left:-605px; 
+    font-weight: 500;
+  }

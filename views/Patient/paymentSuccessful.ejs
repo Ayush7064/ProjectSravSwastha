@@ -4,8 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <link rel="stylesheet" href="/css/styles/payment-global.css" />
-    <link rel="stylesheet" href="/css/styles/payment-successful.css" />
+    
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
@@ -16,70 +15,41 @@
     />
   </head>
   <body>
+    <link rel="stylesheet" href="styles/payment-global.css"/>
+    <link rel="stylesheet" href="styles/token.css"/>
     <div class="payment-successful">
-      <header class="frame-header">
-        <div class="rectangle-div"></div>
-        <div class="image-4-group">
-          <img
-            class="image-4-icon2"
-            loading="lazy"
-            alt=""
-            src="./public/image-4@2x.png"
-          />
+      <div class="upper-navbar">
+        <div class="navbar-section">
+            <img src="images/image 4.png" alt="India Emblem" class="emblem">
+            <div class="text">
+                <h2>Government of National Capital Territory</h2>
+                <p>राष्ट्रीय राजधानी क्षेत्र दिल्ली सरकार</p>
+            </div>
+        </div>
+        <div class="navbar-section">
+            <img src="images/Frame 60.png" alt="Delhi Government Logo" class="delhi-logo">
+            <img src="images/image 6.png" alt="Election Logo" class="election-logo">
+        </div>
+    </div>
 
-          <div class="right-column">
-            <div class="govt-info">
-              <div class="government-of-national2">
-                Government of National Capital Territory
-              </div>
-              <div class="hindi-name1">
-                <div class="div2">राष्ट्रीय राजधानी क्षेत्र दिल्ली सरकार</div>
-              </div>
+    <header class="navbar">
+        <div class="brand">
+            <div class="brand-name">Sarva</div>
+            <div class="brand-tagline">Svastha</div>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-link nav-link-home">Home</a>
+            <a href="appointment.html" class="nav-link nav-link-appointment">OPD Registration</a>
+            <a href="#" class="nav-link nav-link-help">Help Support</a>
+        </nav>
+        <div class="nav-right">
+            <div class="login-button">
+                <a href="login.html" class="nav-link nav-link-home login-text">Login/Register</a>
+                <!-- <span class="login-text">Login/Register</span> -->
             </div>
-          </div>
+            <div class="burger"><img src="images/hamburger.svg" alt="HamBurger" srcset=""></div>
         </div>
-        <div class="middle-column">
-          <div class="middle-content">
-            <div class="image-row">
-              <img
-                class="image-5-icon2"
-                loading="lazy"
-                alt=""
-                src="./public/image-5@2x.png"
-              />
-            </div>
-            <div class="right-image-container">
-              <img
-                class="image-6-icon1"
-                loading="lazy"
-                alt=""
-                src="./public/image-6@2x.png"
-              />
-            </div>
-          </div>
-        </div>
-      </header>
-      <div class="bottom-row">
-        <div class="bottom-row-child"></div>
-        <div class="sarva-svastha">
-          <a class="sarva3">Sarva</a>
-          <div class="svastha-container">
-            <a class="svastha3">Svastha</a>
-          </div>
-        </div>
-        <div class="home-options-wrapper">
-          <div class="home-options">
-            <a class="home2" href="/home">Home</a>
-            <a class="appointment-scheduler2">Appointment Scheduler</a>
-            <a class="help-support1">Help Support</a>
-          </div>
-        </div>
-        <div class="login-container-wrapper">
-          <button class="login-container">
-            <a class="loginregister4">Login/Register</a>
-          </button>
-        </div>
-      </div>
+    </header>
       <main class="appointment-options-parent">
         <div class="appointment-options">
           <div class="appointment-options-child"></div>
@@ -88,6 +58,9 @@
           </button>
           <div class="appointment-types1">
             <a class="appointment-status1">Appointment status</a>
+          </div>
+          <div class="appointment-types1">
+            <a class="appointment-status1">Bed Availability</a>
           </div>
           <div class="appointment-types1">
             <a class="appointment-status1">Cancel appointment</a>
@@ -109,14 +82,10 @@
                 </h2>
                 <div class="invoice-info">
                   <div class="invoice-details">
-                    <div class="invoice-is-sent">* 
-                      Invoice is sent to : <%= appointment.emailId %>
-                    </div>
-                    <div class="invoice-is-sent"><p> * Appointment Date: <%= new Date(appointment.date).toLocaleDateString('en-GB') %></p>
-                    </div>
                     <div class="invoice-is-sent">
-                      * Doctor: <%= Doc.name %>
+                      Invoice is sent to your email address
                     </div>
+                    <div class="invoice-is-sent">Date: 28/08/2024</div>
                   </div>
                 </div>
               </div>

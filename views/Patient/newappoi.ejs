@@ -1,27 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SarvaSwasth</title> 
-</head>
-<body>
-    <h3>Add a new Appointment</h3>
-    <form method = "POST" action="/homepage">
-       <input name="Patient[patientname]" placeholder="Enter Patient Name" type="text"/> 
-       <br/>  <br/>
-       <input name="Patient[emailId]" placeholder="Enter EmailId" type="text"/> 
-       <br/>  <br/>
-       <input name="Patient[mobile]" placeholder="Enter mobile" type="number"/> 
-       <br/>  <br/>
-       <input name="Patient[age]" placeholder="Enter age" type="number"/> 
-       <br/>  <br/>
-       <input name="Patient[Gender]" placeholder="Enter Gender" type="text"/> 
-       <br/>  <br/>
-      
-<button>Pay</button>
 
-    </form>
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPD Registration</title>
+  <link rel="stylesheet" href="styles/Appointment.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom up_nav">
+    <div class="container-fluid navbar-upper">
+      <!-- Left: Logo and Text -->
+      <div class="d-flex align-items-center">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/Image 4.png" alt="Government Logo">
+        </a>
+        <!-- Navbar Title -->
+        <div class="navbar-text">
+          <div>Government of National Capital Territory</div>
+          <div>राष्ट्रीय राजधानी क्षेत्र दिल्ली सरकार</div>
+        </div>
+      </div>
+      <!-- Right: Two Images -->
+      <div class="navbar-upper-right d-flex align-items-center">
+        <img src="images/Image 6.png" alt="Image 1">
+        <img src="images/Frame 60.png" alt="Image 2">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Lower Navbar: Logo, Centered Links, and Login in Hamburger -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary down_nav" style="
+  background-color: var(--color) !important;
+">
+    <div class="container-fluid">
+      <!-- Left: Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="images/SarvaSvasthaLogo.svg" alt="Government Logo">
+      </a>
+
+      <!-- Toggler/collapsable Button for mobile view -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Center and Right: Navbar Links in Collapsible Menu -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/appointmentnew">OPD Registration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/bedavailability">Bed Availability</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Help/Support</a>
+          </li>
+          <!-- Login Button inside the collapsible menu for smaller screens -->
+          <li class="nav-item mt-2 mt-lg-0">
+            <a class="btn btn-custom nav-link mobile-only inside_login" id="inside_button" href="/loginpage">Login/Register</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right: Login Button for larger screens -->
+      <a class="btn btn-custom nav-link desktop-only desk_btn" href="login.html" style="
+      background-color: var(--light);
+      color: var(--color);
+  ">Login/Register</a>
+    </div>
+  </nav>
+
+
+  <div class="form-container">
+    <h1>OPD Registration</h1>
+
+    <div class="registration-box">
+
+      <div class="headers">
+        <div class="first"><a href="appointment.html">New Appointment</a></div>
+        <div class="second"><a href="appointment-status.html">Appointment Status</a></div>
+      </div>
+
+      <div class="separator">
+        <div class="part-one"></div>
+        <div class="part-two"></div>
+      </div>
+
+      <div class="tabs">
+        <div class="tab active"><div class="circle">1</div> Select Hospital</div>
+        <div class="tab"><div class="circle">2</div> Personal Details</div>
+        <div class="tab"><div class="circle">3</div> Payment</div>
+        <div class="search-button"><input type="text" placeholder="Search"
+          name="search"></div>
+      </div>
+
+      <div class="herosection">
+        <div class="lower-forms-container">
+
+          <form class="appointment-form">
+            <label for="department">Department</label>
+            <select id="department" name="department">
+              <option value="" selected="selected">Select Department</option>
+            </select>
+  
+            <label for="hospital">Hospital/Clinic</label>
+            <select id="hospital" name="hospital">
+              <option value="" selected="selected"> Select Hospital</option>
+            </select>
+  
+            <label for="doctor">Doctor</label>
+            <select id="doctor" name="doctor">
+              <option value="" selected="selected">Select doctor</option>
+            </select>
+  
+            <label for="date">Select Date</label>
+            <input type="date" name="date" id="date" required />
+  
+            <div class="form-buttons">
+              <button type="submit" class="next-button"><a href="appointment-2.html">Proceed to pay</a></button>
+            </div>
+          </form>
+
+        </div>
+
+
+        <div class="recommendation">
+          <h2>Recommended:</h2>
+          <div class="recommendation-card">
+            <h3>Apollo Hospital</h3>
+            <p>Address: 59 street, Manik bagh, Bilawali sector, near IET campus, New Delhi</p>
+            <p>Contact: 00XX00XX</p>
+          </div>
+          <div class="recommendation-card">
+            <h3>Apollo Hospital</h3>
+            <p>Address: 59 street, Manik bagh, Bilawali sector, near IET campus, New Delhi</p>
+            <p>Contact: 00XX00XX</p>
+          </div>
+          <a href="#" class="see-more">See more</a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+  <script src="js/appointment.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styleHospitalEnd.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar Section -->
+        <div class="upper-navbar">
+            <div class="navbar-section">
+                <img src="/images/image 4.png" alt="India Emblem" class="emblem">
+                <div class="text">
+                    <h2>Government of National Capital Territory</h2>
+                    <p>राष्ट्रीय राजधानी क्षेत्र दिल्ली सरकार</p>
+                </div>
+            </div>
+            <div class="navbar-section">
+                <img src="/images/Frame 60.png" alt="Delhi Government Logo" class="delhi-logo">
+                <img src="/images/image 6.png" alt="Election Logo" class="election-logo">
+            </div>
+        </div>
+    
+        <header class="navbar">
+            <div class="brand">
+              <a href="/home">
+                <img src="/images/SarvaSvasthaLogo.svg"/>
+              </a>
+            </div>
+            <div class="nav-right">
+                <div class="logout">
+                    <a href="/home">Logout</a>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+    <div class="side">
+        <div class="left-side">
+            <div class="hospital-name">
+                <p><img src="/images/solar_hospital-line-duotone.png" class="hosp-img"/><strong>AIIMS,DELHI</strong></p></div>
+            <div class="hospital-tasks">
+                <p><a href="#">DESK</a></p>
+                <p><a href="#"><strong>OPDs and BED</strong></a></p>
+                <p><a href="#">Inventory</a></p>
+            </div>
+
+
+        </div>
+        <div class="right-side">
+            <div class="topbar">
+                <div class="dashboard"> 
+                     <p><img src="/images/logo-image.png" class="dashB-img"/> Dashboard</p>
+                </div>
+                <div class="notify">
+                    <p><img src="/images/notify.png" class="notify-img"/>Notification</p>
+                </div>
+            </div>
+            <div class="opds">
+                OPDs and Beds
+            </div>
+        <div class="container1">
+        <div class="tabs">
+            <button class="tab active">Appointment</button>
+            <button class="tab">Bed Status</button>
+        </div>
+
+        <div class="appointment-section">
+            <div class="header">
+                <h2>Patient’s Appointment</h2>
+                <div class="date-picker">
+                    <label for="date">Change date:</label>
+                    <input type="date" id="date" name="date" value="2024-08-28">
+                </div>
+            </div>
+            <hr>
+
+            <div class="appointment-list">
+                
+                <div class="appointment-item">
+                    <div class="appointment-info">
+                        <span class="name"><b>Name</b></span>
+                        <span class="mobile"><b>Mobile</b></span>
+                        <span class="department"><b>Department</b></span>
+                        <span class="doctor"><b>Doctor</b></span>
+                        <span class="token"><b>token NO.</b></span>
+                        <span class="token"><b>Status</b></span>
+                        <span class="token"><b>Delete</b></span>
+                    </div>
+                </div>
+                <% let token = 1; %> <!-- Initialize token outside the loop -->
+                <% for (let appointment of allApointment) { %>
+                     <div class="appointment-item">
+                         <div class="appointment-info">
+                            <span class="name"><%= appointment.patientname %></span>
+                            <span class="mobile"><%= appointment.mobile %></span>
+                             <span class="department"><%= appointment.department.name %></span>
+                             <span class="doctor"><%= appointment.doctor.name %></span>
+                            <span class="token"><%= token %></span> <!-- Display the current token -->
+                             <span class="name"><input type="radio" name="status1"></span>
+                             <span class="name">
+                                <form action="/hospital/<%= appointment._id %>?_method=DELETE" method="POST">
+                                  <button  class="dlt-btn"><i class="fa-solid fa-trash"></i></button>
+                                    <form>
+
+                                    </span>
+                        </div>
+                        </div>
+                     <% token++; %> <!-- Increment token after each appointment -->
+                <% } %>
+                <!-- Add more appointments as needed -->
+
+                
+            </div>
+        </div>
+       
+
+        
+    <!-- Plus Button to open the modal -->
+    
+    <button id="open-modal-btn" type="button" class="open-modal-btn">+</button>
+    <!-- Modal Structure -->
+    <div id="appointment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h1>New Appointment</h1>
+            <form id="multiStepForm" class="appointment-form">
+                <!-- Step 1 -->
+                <div class="step active" id="step1">
+                    <form>
+                        <!-- Step 1 -->
+                        <div class="form-group">
+                          <label for="department">Department</label>
+                          <select id="department" name="department">
+                            <option value="" disabled selected>Select Department</option>
+                            <option value="Cardiology">Cardiology</option>
+                            <!-- Add more options here -->
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="hospital">Hospital</label>
+                          <select id="hospital" name="hospital">
+                            <option value="" disabled selected>Select Hospital</option>
+                            <option value="Apollo hospital">Apollo hospital</option>
+                            <!-- Add more options here -->
+                          </select>
+                        </div>
+                        
+                        <div class="form-group">
+                          <label for="doctor">Doctor</label>
+                          <select id="doctor" name="doctor">
+                            <option value="" disabled selected>Select Doctor</option>
+                            <option value="Dr. Ayesha Verma">Dr. Ayesha Verma</option>
+                            <!-- Add more options here -->
+                          </select>
+                        </div>
+                        
+                        <div class="form-group">
+                          <label for="appointment-date">Select Appointment Date:</label>
+                          <div class="date-input">
+                            <input type="date" id="appointment-date" name="appointment-date" />
+                          </div>
+                        </div>
+                        
+                        <button type="button" id="popup-btn-next" onclick="nextStep()">Next</button>
+                      </div>
+                      
+                      <!-- Step 2 -->
+                      <div class="step" id="step2">
+                        <div class="form-group">
+                          <label for="name">Patient's Name</label>
+                          <input type="text" name="name" id="patientname" placeholder="Enter patient's name" />
+                        </div>
+                        
+                        <div class="form-group">
+                          <label for="email">Email:</label>
+                          <input type="email" name="email" id="email" placeholder="Enter Email-Id" />
+                        </div>
+                        
+                        <div class="form-group">
+                          <label for="mobile">Mobile No.</label>
+                          <input type="number" name="mobile" id="mobileno" placeholder="Enter mobile No." />
+                        </div>
+                        
+                        <div class="age-gender">
+                          <div class="form-group age">
+                            <label for="age">Age</label>
+                            <input type="number" name="age" id="Age" placeholder="Enter Age" />
+                          </div>
+                          
+                          <div class="form-group gender">
+                            <label for="gender">Gender</label>
+                            <input type="text" name="gender" id="Gender" placeholder="Enter Gender" />
+                          </div>
+                        </div>
+                        <div class="div-btn">
+                        <button type="button" id="popup-btn" onclick="previousStep()">Previous</button>
+                        <button type="button" id="popup-btn-next" onclick="nextStep()">Next</button>
+                      </div>
+                      </div>
+                      
+                      <!-- Step 3 -->
+                      <div class="step" id="step3">
+                        <div class="div-btn">
+                            <button type="button" id="popup-btn" onclick="previousStep()">Previous</button>
+                        <button type="button" id="popup-btn" class="submitForm" onclick="submitForm()">Submit</button>
+                    </div>
+
+                      </div>
+                      </form>
+                      
+        </div>
+    </div>
+    
+    
+
+
+    
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

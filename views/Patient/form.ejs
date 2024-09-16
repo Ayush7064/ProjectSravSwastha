@@ -1,182 +1,207 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+<html lang="en">
 
-    <link rel="stylesheet" href="/css/styles/appoint-global.css" />
-    <link rel="stylesheet" href="/css/styles/appoint-iindex.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Anek Devanagari:wght@500&display=swap"
-    />
-  </head>
-  <body>
-    <div class="upper-navbar">
-      <div class="navbar-section">
-          <!-- <img src="images/image 4.png" alt="India Emblem" class="emblem"> -->
-           <div class="photo"></div>
-          <div class="text">
-              <h2>Government of National Capital Territory</h2>
-              <p>राष्ट्रीय राजधानी क्षेत्र दिल्ली सरकार</p>
-          </div>
-      </div>
-      <div class="navbar-section">
-          <img src="images/Frame 60.png" alt="Delhi Government Logo" class="delhi-logo">
-          <img src="images/image 6.png" alt="Election Logo" class="election-logo">
-      </div>
-  </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPD Registration</title>
+  <link rel="stylesheet" href="styles/Appointment.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
-  <header class="navbar">
-      <div class="brand">
-          <div class="brand-name">Sarva</div>
-          <div class="brand-tagline">Svastha</div>
-      </div>
-      <nav class="nav-links">
-          <a href="/home" class="nav-link nav-link-home">Home</a>
-          <a href="/appointmentnew" class="nav-link nav-link-appointment">OPD Registration</a>
-          <a href="#" class="nav-link nav-link-help">Help Support</a>
-      </nav>
-      <div class="nav-right">
-          <div class="login-button">
-              <a href="/loginpage" class="nav-link nav-link-home login-text">Login/Register</a>
-              <!-- <span class="login-text">Login/Register</span> -->
-          </div>
-          <div class="burger"><img src="images/hamburger.svg" alt="HamBurger" srcset=""></div>
-      </div>
-  </header>
-  <div class="hero">
+</head>
 
-      <div class="appointment-options">
-        <div class="appointment-options-child"></div>
-        <button class="appointment-types">
-          <div class="new-appointment2">New appointment</div>
-        </button>
-        <div class="appointment-types1">
-          <a class="appointment-status1">Appointment status</a>
-        </div>
-        <div class="appointment-types1">
-          <a class="appointment-status1">Bed Availability</a>
-        </div>
-        <div class="appointment-types1">
-          <a class="appointment-status1">Cancel appointment</a>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom up_nav">
+    <div class="container-fluid navbar-upper">
+      <!-- Left: Logo and Text -->
+      <div class="d-flex align-items-center">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/Image 4.png" alt="Government Logo">
+        </a>
+        <!-- Navbar Title -->
+        <div class="navbar-text">
+          <div>Government of National Capital Territory</div>
+          <div>राष्ट्रीय राजधानी क्षेत्र दिल्ली सरकार</div>
         </div>
       </div>
-
-    <div class="section2">
-          <main class="main-content">
-            <h1>Book Your Appointment</h1>
-            <h2>NEW APPOINTMENT</h2>
-             
-
-<form method="post" action="/homepage" class="appointment-form">
-    <br><br>
-    <label for="department">Department</label>
-    <input type="text" name="department" id="department" placeholder="Enter Department" required/>
-    <label for="hospital">Hospital</label>
-    <input type="text" name="hospital" id="hospital" placeholder="Enter Hospital" required/>
-    <label for="doctor">Doctor</label>
-    <input type="text" name="doctor" id="doctor" placeholder="Enter Doctor"/>
-      <label for="date" name="date">Select Date</label>
-      <input type="date" name="date" id="date" required/>
-      <label for="department">Patient</label>
-      <input name="patientname" placeholder="Enter Patient Name" type="text" required/> 
-      <label for="emailId">Email</label>
-   <input name="emailId" placeholder="Enter EmailId" type="text" required/> 
-   <label for="mobile">Mobile NO.</label>
-   <input name="mobile" placeholder="Enter mobile" type="number" required/> 
-   <label for="age">Age</label>
-   <input name="age" placeholder="Enter age" type="number" required/> 
-   <label for="Gender">Gender</label>
-   <input name="Gender" placeholder="Enter Gender" required type="text"/> 
-   <br/>  <br/>
-      <button type="submit" id="submit">Submit</button>
-</form>
-        </main>
-
-        <div class="hos-cards-container">
-          <div class="heading-text-hospital">Hospitals Near By</div>
-          <div class="hospital-cards">
-            <div class="hospital-card-one">
-              <div class="hospital-card-one-content">
-                <div class="hospital-card-one-icon">
-                  <img
-                    class="solarhospital-line-duotone-icon"
-                    loading="lazy"
-                    alt=""
-                    src="images/solar_hospital-line-duotone.png"
-                  />
-      
-                  <div class="apollo-hospital">Apollo Hospital</div>
-                </div>
-                <i class="address-59-street"
-                  >Address: 59 street, Manik bagh, Bilawali sector,
-                  near IET campus, New Delhi</i
-                >
-                <i class="contact-00xx00xx">Contact: 00XX00XX</i>
-              </div>
-            </div>
-          </div>
-          <div class="hospital-card-two">
-            <div class="hospital-card-one">
-              <div class="hospital-card-one-content">
-                <div class="hospital-card-one-icon">
-                  <img
-                    class="solarhospital-line-duotone-icon"
-                    alt=""
-                    src="images/solar_hospital-line-duotone.png"
-                  />
-        
-                  <div class="apollo-hospital">Apollo Hospital</div>
-                </div>
-                <i class="address-59-street"
-                  >Address: 59 street, Manik bagh, Bilawali sector, near
-                  IET campus, New Delhi</i
-                >
-                <i class="contact-00xx00xx">Contact: 00XX00XX</i>
-              </div>
-            </div>
-          </div>
-          <div class="hospital-card-three">
-            <div class="hospital-card-three-content">
-              <div class="hospital-card-three-details">
-                <div class="hospital-card-one-content">
-                  <div class="hospital-card-one-icon">
-                    <img
-                      class="solarhospital-line-duotone-icon"
-                      alt=""
-                      src="images/solar_hospital-line-duotone.png"
-                    />
-        
-                    <div class="apollo-hospital">Apollo Hospital</div>
-                  </div>
-                  <i class="address-59-street"
-                    >Address: 59 street, Manik bagh, Bilawali sector,
-                    near IET campus, New Delhi</i
-                  >
-                  <i class="contact-00xx00xx">Contact: 00XX00XX</i>
-                </div>
-              </div>
-              <div class="view-more">
-                <div class="see-more">See more</div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <!-- Right: Two Images -->
+      <div class="navbar-upper-right d-flex align-items-center">
+        <img src="images/Image 6.png" alt="Image 1">
+        <img src="images/Frame 60.png" alt="Image 2">
+      </div>
     </div>
-    
-  </div>
+  </nav>
+
+  <!-- Lower Navbar: Logo, Centered Links, and Login in Hamburger -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary down_nav" style="
+  background-color: var(--color) !important;
+">
+    <div class="container-fluid">
+      <!-- Left: Logo -->
+      <a class="navbar-brand" href="/home">
+        <img src="images/SarvaSvasthaLogo.svg" alt="Government Logo">
+      </a>
+
+      <!-- Toggler/collapsable Button for mobile view -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Center and Right: Navbar Links in Collapsible Menu -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/appointmentnew">OPD Registration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/bedavailability">Bed Availability</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Help/Support</a>
+          </li>
+          <!-- Login Button inside the collapsible menu for smaller screens -->
+          <li class="nav-item mt-2 mt-lg-0">
+            <a class="btn btn-custom nav-link mobile-only inside_login" id="inside_button" href="/loginpage">Login/Register</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right: Login Button for larger screens -->
+      <a class="btn btn-custom nav-link desktop-only desk_btn" href="/loginpage" style="
+      background-color: var(--light);
+      color: var(--color);
+  ">Login/Register</a>
     </div>
-   
+  </nav>
+
+
+  <div class="form-container">
+    <h1>OPD Registration</h1>
+
+    <div class="registration-box">
+
+      <div class="headers">
+        <div class="first"><a href="/appointmentnew">New Appointment</a></div>
+        <div class="second"><a href="/appointmentstatus">Appointment Status</a></div>
+      </div>
+
+      <div class="separator">
+        <div class="part-one"></div>
+        <div class="part-two"></div>
+      </div>
+
+      <div class="tabs">
+        <div class="tab active"><div class="circle">1</div> Select Hospital</div>
+        <div class="tab"><div class="circle">2</div> Personal Details</div>
+        <div class="tab"><div class="circle">3</div> Payment</div>
+        <div class="search-button"><input type="text" placeholder="Search"
+          name="search"></div>
+      </div>
+
+      <div class="herosection">
+        <div class="lower-forms-container">
+
+          <form class="appointment-form" id="appointmentForm" action="/homepage" method="post">
+              <!-- Initial Form Fields -->
+            <div id="initialFields">
+              <label for="hospital">Hospital</label>
+              <select id="hospital" name="hospital">
+                <option value="" disabled selected>Select Hospital</option>
+                <option value="Apollo hospital">Apollo hospital</option>
+                <!-- Add more options here -->
+              </select>
+
+              <label for="department">Department</label>
+              <select id="doctor" name="doctor">
+                <option value="" disabled selected>Select Doctor</option>
+                <option value="Dr. Ayesha Verma">Dr. Ayesha Verma</option>
+                <!-- Add more options here -->
+              </select>
+
+              <label for="doctor">Doctor</label>
+              <select id="doctor" name="doctor">
+                <option value="" disabled selected>Select Doctor</option>
+                <option value="Dr. Ayesha Verma">Dr. Ayesha Verma</option>
+                <!-- Add more options here -->
+              </select>
+
+              <label for="appointmentDate">Appointment Date</label>
+              <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+              <!-- Proceed to Pay Button -->
+              <button type="button" id="proceedToPay">Next</button>
+          </div>
+
+          <!-- New Fields for Patient Details (Initially Hidden) -->
+          <div id="patientFields" style="display: none;">
+              <label for="patientName">Patient Name</label>
+              <input type="text" id="patientName" name="patientName" placeholder="Enter Patient Name" required>
+
+              <label for="email">Email ID</label>
+              <input type="email" id="email" name="email" placeholder="Enter Email ID" required>
+
+              <label for="mobile">Mobile</label>
+              <input type="tel" id="mobile" name="mobile" placeholder="Enter Mobile Number" required>
+
+              <label for="age">Age</label>
+              <input type="number" id="age" name="age" placeholder="Enter Age" required>
+
+              <label for="gender">Gender</label>
+              <select id="gender" name="gender" required>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+              </select>
+
+              <!-- Final Proceed to Pay Button -->
+              <a href="/paymentSuccessful"><p id="finalProceedToPay">Proceed to Pay</button>
+              </p>
+              </a>
+          </div>
+          </form>
+
+        </div>
+
+
+        <div class="recommendation">
+          <h2>Recommended:</h2>
+          <div class="recommendation-card">
+            <h3>Apollo Hospital</h3>
+            <p>Address: 59 street, Manik bagh, Bilawali sector, near IET campus, New Delhi</p>
+            <p>Contact: 00XX00XX</p>
+          </div>
+          <div class="recommendation-card">
+            <h3>Apollo Hospital</h3>
+            <p>Address: 59 street, Manik bagh, Bilawali sector, near IET campus, New Delhi</p>
+            <p>Contact: 00XX00XX</p>
+          </div>
+          <a href="#" class="see-more">See more</a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
 
   </div>
-  </body>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+  <script src="js/appointment.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
-
-
-
-

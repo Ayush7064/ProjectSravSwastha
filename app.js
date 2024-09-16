@@ -1,5 +1,6 @@
 const express =require("express");
 const app = express();
+const cors=require("cors");
 const mongoose = require("mongoose");
 const Patient = require("./models/patient.js");
 const Hospital = require("./models/hospital.js");
@@ -8,6 +9,9 @@ const Doctor=require("./models/doctor.js");
 const Appointment=require("./models/appointment.js");
 const path = require("path");
 const methodOverride = require("method-override");
+app.use(cors());
+// Add this line to parse JSON request bodies
+app.use(express.json());
 
 
 
@@ -31,7 +35,7 @@ app.use(methodOverride("_method"));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get("/" , (req,res)=>{
-    res.send("Hii this is root");
+    res.redirect("/home");
 });
 app.get("/home", async(req,res)=>{
     res.render("Patient/indexpage.ejs" );
@@ -133,6 +137,19 @@ app.get("/yourappointment",async(req,res)=>{
         res.status(500).send('Server error');
     }
 
+});
+
+app.get("/paymentSuccessful",(req,res)=>{
+    res.render("Patient/paymentSuccessful.ejs");
+});
+app.get("/bedavailability",(req,res)=>{
+    res.render("Patient/bedavailability.ejs")
+});
+app.get("/appointmentstatus",(req,res)=>{
+    res.render("Patient/appointmentstatus.ejs")
+});
+app.get("/checkstatus",(req,res)=>{
+    res.render("Patient/checkstatus.ejs");
 })
 
 app.get('/',async (req, res) => {
@@ -147,14 +164,54 @@ app.get('/',async (req, res) => {
         res.status(500).send('Server error');
     }
 });
+//delete Appointment
+
+
+// hospital end
+app.get("/hospital",async(req,res)=>{
+    const allApointment= await Appointment.find({}).populate("hospital").populate("doctor").populate("department");
+    //console.log(allApointment);
+
+    res.render("hospital/hospitalEnd.ejs",{ allApointment });
+})
+app.post("/hospital",async(req,res)=>{
+    const { department,hospital, doctor, date,name,email,number,age,gender } = req.body;
+    console.log(req.body);
+
+    console.log(req.body.hospital);
+      // Find department, hospital, and doctor dynamically using the request data
+      const depart = await Department.findOne({name:req.body.department});
+      const Hosp = await Hospital.findOne({ name: req.body.hospital });
+      const Doc = await Doctor.findOne({ name: doctor });
+      // Create a new appointment
+      
+      const appointment = new Appointment({
+        department: depart._id,
+        hospital: Hosp._id,
+        doctor: Doc._id,
+        patientname:name,
+        emailId:email,
+        mobile :number,
+        age:age,
+        Gender:gender,
+        date:date,
+      });
+     await appointment.save();
+     console.log(appointment);
+     console.log("Successfull!!");
+      // Send response to client to redirect
+    res.json({ redirectUrl: "/hospital" });
+});
 
 
 
-
-
-
-
-
+app.delete("/hospital/:id",async(req,res)=>{
+    let id = req.params.id;
+    console.log(id);
+    let appointment=await Appointment.findByIdAndDelete(id);
+    console.log(appointment);
+    res.redirect("/hospital");
+});
 
 
 

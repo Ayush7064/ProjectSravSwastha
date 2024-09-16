@@ -1,0 +1,530 @@
+:root {
+    --seccolor: #ebebeb;
+    --color: #004094;
+    --black: #000000;
+    --green: #69D876;
+}
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --seccolor: #ebebeb;
+    --color: #004094;
+    --black: #000000;
+    --green: #69D876;
+    font-family: 'Poppins';
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--seccolor);
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    position: fixed;
+}
+
+.upper-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #fff;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.navbar-section {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-section img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.emblem {
+    height: 60px;
+}
+
+.text h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.text p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.delhi-logo,
+.election-logo {
+    height: 40px;
+    margin-left: 15px;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color);
+    padding: 20px;
+    color: white;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.brand-name {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.brand-tagline {
+    font-size: 1rem;
+    color: var(--green);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--seccolor);
+    color: #007bff;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.login-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color);
+}
+.side{
+    display: flex;
+    flex-direction: row;
+}
+.left-side{
+    background-color:var(--seccolor);;
+    height: 100vh;
+    width:23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right-side{
+    background-color: var(--seccolor);
+    height: 100vh;
+    width: 77%;
+}
+.hospital-name{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: larger;
+}
+.hosp-img{
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+.hospital-tasks>p{
+    margin: 1.25rem;
+}
+.topbar{
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:1.5rem;
+    margin-right: 1.5rem;
+}
+.dashB-img{
+    height: 2rem;
+}
+.notify-img{
+    height: 1.25rem;
+}
+.dashboard>p{
+    font-size: 1.5rem;
+    color: #000000;
+    display: inline-flex;
+    align-items: center;
+    gap:0.4rem;
+    font-weight: 500;
+}
+.notify>p{
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap:0.4rem;
+}
+.opds{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #000000;
+    font-size: large;
+    font-weight: 400;
+}
+
+.container1 {
+    width: 98%;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 1.5rem;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #ccc;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-weight: bold;
+}
+
+.tab.active {
+    border-bottom: 2px solid #007bff;
+    color: #007bff;
+}
+
+.appointment-section .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.date-picker {
+    display: flex;
+    align-items: center;
+}
+
+.date-picker label {
+    margin-right: 10px;
+}
+
+.appointment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.appointment-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.appointment-info {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.appointment-info .name,
+.appointment-info .mobile,
+.appointment-info .department,
+.appointment-info .doctor,
+.appointment-info .token {
+    width: 20rem;
+}
+
+.appointment-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.add-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.add-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.header{
+    margin-top: 1rem;
+}
+a:hover {
+    text-decoration: underline;
+}
+.side{
+    padding-top: 12rem;
+    padding-bottom: 10rem;
+}
+.logout{
+    display: inline-flex;
+    align-items: center;
+    gap:0.5rem;
+    margin-right: 0.5rem;
+}
+.logout>i{
+    font-size: 1.25rem;
+
+}
+.logout>a{
+    text-decoration: none;
+    color:white;
+}
+.left-side{
+    overflow: hidden;
+}
+.right-side{
+    overflow:auto;
+    padding-bottom: 15rem;
+}
+
+/* for the form pop up */
+/* Basic reset *
+
+/* Plus button styling */
+.open-modal-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
+    width: 4.5rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+    background-color: var(--color);
+    color: white;
+    border: none;
+    font-size: 2.5rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* Modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    height: 85vh;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Close button styling */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Label styling */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Select input styling */
+.form-group select,
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="email"],
+.form-group input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+/* Date input styling */
+.date-input {
+    position: relative;
+}
+
+.date-input input {
+    padding-right: 30px;
+}
+
+/* Calendar icon styling */
+.calendar-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #888;
+}
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Button styling */
+.btn-back,
+.btn-next {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-back {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.btn-next {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-back:hover {
+    background-color: #e0e0e0;
+}
+
+.btn-next:hover {
+    background-color: #0056b3;
+}
+.age .gender{
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;  
+}
+.age-gender{
+    display: flex;
+    flex-direction: row;
+    gap:11rem
+}
+
+  #multiStepForm {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  .step {
+    display: none; /* Hide all steps by default */
+  }
+  
+  .step.active {
+    display: block; /* Show the active step */
+  }
+
+#popup-btn{
+    all: unset;
+    border: none;
+    width: 2rem;
+    background-color: #0056b3;
+    padding: 0.5rem 5rem 0.5rem 2.5rem;
+    color: white;
+    border-radius: 1rem;
+    font-size: large;
+}
+.div-btn{
+    display: flex;
+    gap:2rem;
+    justify-content: space-between;
+}
+#popup-btn-next{
+    all: unset;
+    border: none;
+    width: 2rem;
+    background-color: #0056b3;
+    padding: 0.5rem 4rem 0.5rem 4rem;
+    color: white;
+    border-radius: 1rem;
+    font-size: large;
+}
+.dlt-btn{
+    all:unset;
+    padding: 0.4rem 0.75rem 0.4rem 0.75rem;
+    background-color: #EBEBEB;
+    font-size: 1rem;   
+    border-radius: 0.25rem;
+}

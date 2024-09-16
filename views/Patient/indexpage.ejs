@@ -1,138 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figma Design Clone</title>
-    <link rel="stylesheet" href="css/styles/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Two-Part Navbar</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/style.css">
 </head>
+
 <body>
-    <div class="container">
-        <!-- Navbar Section -->
 
-        <div class="upper-navbar">
-            <div class="navbar-section">
-                <img src="images/image 4.png" alt="India Emblem" class="emblem">
-                <div class="text">
-                    <h2>Government of National Capital Territory</h2>
-                    <p>राष्ट्रीय राजधानी क्षेत्र दिल्ली सरकार</p>
-                </div>
-            </div>
-            <div class="navbar-section">
-                <img src="images/Frame 60.png" alt="Delhi Government Logo" class="delhi-logo">
-                <img src="images/image 6.png" alt="Election Logo" class="election-logo">
-            </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom up_nav">
+    <div class="container-fluid navbar-upper">
+      <!-- Left: Logo and Text -->
+      <div class="d-flex align-items-center">
+        <!-- Logo -->
+        <a class="navbar-brand" href="/home">
+          <img src="images/Image 4.png" alt="Government Logo">
+        </a>
+        <!-- Navbar Title -->
+        <div class="navbar-text">
+          <div>Government of National Capital Territory</div>
+          <div>राष्ट्रीय राजधानी क्षेत्र दिल्ली सरकार</div>
         </div>
-
-        <header class="navbar">
-            <div class="brand">
-                <div class="brand-name">Sarva</div>
-                <div class="brand-tagline">Svastha</div>
-            </div>
-            <nav class="nav-links">
-                <a href="/home" class="nav-link nav-link-home">Home</a>
-                <a href="/appointmentnew" class="nav-link nav-link-appointment">Appointment Scheduler</a>
-                <a href="#" class="nav-link nav-link-help">Help Support</a>
-            </nav>
-            <div class="nav-right">
-                <div class="login-button">
-                    <a href="/loginpage" class="nav-link nav-link-home login-text">Login/Register</a>
-                    <!-- <span class="login-text">Login/Register</span> -->
-                </div>
-                <div class="burger"><img src="images/hamburger.svg" alt="HamBurger" srcset=""></div>
-            </div>
-        </header>
-
-        <!-- Main Content Section -->
-        <main class="main-content">
-            <!-- Left Column -->
-            <div class="left-column">
-                <div class="header-text">
-                    <div>Making your Health our,</div>
-                    <div class = "bold-text">First Priority!</div>
-                </div>
-                <div class="slider">
-                    <p class="italic-text">*Hassle free consultancy*</p>
-                </div>
-            </div>
-
-            <!-- Right Column -->
-            <div class="right-column">
-                <img src="images/HeroImage.png" alt="Hero Image" class="hero-image">     
-            </div>
-
-        </main>
-
-        <h2 class = "titleText">Our Services</h2>
-        <div class="services">
-            <div class="services_tank">
-
-                <div class="left">
-
-                    <div class="service-container">
-                        <img src="images/icon-park-outline_appointment.png" alt="Online Appointment Icon" class="service-icon">
-                        <div class="service-info">
-                            <div class = "flex service-desc">
-                                <h3 class="service-title">Online Appointment:</h3>
-                                <p class="service-text">Now, you don’t need to wait in long queues for a medical check-up. You can book your appointment from anywhere, anytime.</p>
-                            </div> 
-                        </div>
-                        <div class="learn-more">Learn More</div>
-                    </div>
-
-                    <div class="service-container">
-                        <img src="images/icon-park-outline_appointment.png" alt="Online Appointment Icon" class="service-icon">
-                        <div class="service-info">
-                            <div class = "flex service-desc">
-                                <h3 class="service-title">Online Appointment:</h3>
-                                <p class="service-text">Now, you don’t need to wait in long queues for a medical check-up. You can book your appointment from anywhere, anytime.</p>
-                            </div> 
-                        </div>
-                        <div class="learn-more">Learn More</div>
-                    </div>
-
-                </div>
-
-                <div class="service-container">
-                    <img src="images/Vector.png" alt="Bed Availability Icon" class="service-icon">
-                    <div class = "flex service-desc">
-                        <h3 class="service-title">Bed Availability and Patient Admission:</h3>
-                        <p class="service-text">Easily manage the bed status and currently admitted patients through our organized dashboard. </p>
-                    </div>
-                    <div class="learn-more">Learn More</div>
-                </div>
-
-            </div> 
-
-        </div>
-
-
-            <div class="aimSection">
-                <h2 class = "aimtitle">Our Aim:</h2>
-                <div class="aimcontainer">
-                    
-                    <div class="aim-box">
-                        <div class="circle">1</div>
-                        <div>We aim to provide a city-wide solution to make your medical appointment easy and hassle-free. You don’t need to stay in a long waiting queue for your next appointment with your doctor.</div>
-                    </div>
-                    <div class="aim-box">
-                        <div class="circle">2</div>
-                        <div>We aim to provide a city-wide solution to make your medical appointment easy and hassle-free. You don’t need to stay in a long waiting queue for your next appointment with your doctor.</div>
-                    </div>
-                    <div class="aim-box">
-                        <div class="circle">3</div>
-                        <div>We aim to provide a city-wide solution to make your medical appointment easy and hassle-free. You don’t need to stay in a long waiting queue for your next appointment with your doctor.</div>
-                    </div>
-                </div>
-            </div>
-
-       
-
-        <!-- Footer Section -->
-        <footer class="footer">
-            <!-- Footer content here -->
-        </footer>
+      </div>
+      <!-- Right: Two Images -->
+      <div class="navbar-upper-right d-flex align-items-center">
+        <img src="images/Image 6.png" alt="Image 1">
+        <img src="images/Frame 60.png" alt="Image 2">
+      </div>
     </div>
+  </nav>
+
+  <!-- Lower Navbar: Logo, Centered Links, and Login in Hamburger -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary down_nav">
+    <div class="container-fluid">
+      <!-- Left: Logo -->
+      <a class="navbar-brand" href="/home">
+        <img src="images/SarvaSvasthaLogo.svg" alt="Government Logo">
+      </a>
+
+      <!-- Toggler/collapsable Button for mobile view -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Center and Right: Navbar Links in Collapsible Menu -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/appointmentnew">OPD Registration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/bedavailability">Bed Availability</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Help/Support</a>
+          </li>
+          <!-- Login Button inside the collapsible menu for smaller screens -->
+          <li class="nav-item mt-2 mt-lg-0">
+            <a class="btn btn-custom nav-link mobile-only inside_login" id="inside_button" href="/loginpage">Login/Register</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right: Login Button for larger screens -->
+      <a class="btn btn-custom nav-link desktop-only desk_btn" href="/loginpage">Login/Register</a>
+    </div>
+  </nav>
+
+  <!-- Main Content Section -->
+  <main class="main-content">
+    <!-- Left Column -->
+    <div class="left-column">
+        <div class="header-text">
+            <div>Making your Health our,</div>
+            <div class="bold-text">First Priority!</div>
+        </div>
+        <div class="slider">
+            <button class="animated-button">
+                <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                    </path>
+                </svg>
+                <span class="text"><a href="/appointmentnew">Book Your Appointment</a></span>
+                <span class="circle"></span>
+                <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                    </path>
+                </svg>
+            </button>
+            <p class="italic-text">*Hassle free consultancy*</p>
+        </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right-column">
+        <img src="images/HeroImage.png" alt="Hero Image" class="hero-image">
+    </div>
+
+</main>
+
+<h2 class="titleText">Our Services</h2>
+<div class="services">
+    <div class="services_tank">
+
+        <div class="left">
+
+            <div class="service-container">
+                <img src="images/icon-park-outline_appointment.png" alt="Online Appointment Icon"
+                    class="service-icon">
+                <div class="service-info">
+                    <div class="flex service-desc">
+                        <h3 class="service-title">Online Appointment:</h3>
+                        <p class="service-text">Now, you don’t need to wait in long queues for a medical
+                            check-up. You can book your appointment from anywhere, anytime.</p>
+                    </div>
+                </div>
+                <div class="learn-more">Learn More</div>
+            </div>
+
+            <div class="service-container">
+                <img src="images/icon-park-outline_appointment.png" alt="Online Appointment Icon"
+                    class="service-icon">
+                <div class="service-info">
+                    <div class="flex service-desc">
+                        <h3 class="service-title">Online Appointment:</h3>
+                        <p class="service-text">Now, you don’t need to wait in long queues for a medical
+                            check-up. You can book your appointment from anywhere, anytime.</p>
+                    </div>
+                </div>
+                <div class="learn-more">Learn More</div>
+            </div>
+
+        </div>
+
+        <div class="service-container">
+            <img src="images/tabler_bed.svg" alt="Bed Availability Icon" class="service-icon">
+            <div class="flex service-desc">
+                <h3 class="service-title">Bed Availability and Patient Admission:</h3>
+                <p class="service-text">Easily manage the bed status and currently admitted patients through our
+                    organized dashboard. </p>
+            </div>
+            <div class="learn-more">Learn More</div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="aimSection">
+    <h2 class="aimtitle">Our Aim:</h2>
+    <div class="aimcontainer">
+
+        <div class="aim-box">
+            <div class="circle">1</div>
+            <div>We aim to provide a city-wide solution to make your medical appointment easy and hassle-free.
+                You don’t need to stay in a long waiting queue for your next appointment with your doctor.</div>
+        </div>
+        <div class="aim-box">
+            <div class="circle">2</div>
+            <div>We aim to provide a city-wide solution to make your medical appointment easy and hassle-free.
+                You don’t need to stay in a long waiting queue for your next appointment with your doctor.</div>
+        </div>
+        <div class="aim-box">
+            <div class="circle">3</div>
+            <div>We aim to provide a city-wide solution to make your medical appointment easy and hassle-free.
+                You don’t need to stay in a long waiting queue for your next appointment with your doctor.</div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+    <!-- Footer content here -->
+</footer>
+</div>
+
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>

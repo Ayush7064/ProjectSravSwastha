@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bed Availability</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/bedavailability.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom up_nav">
+    <div class="container-fluid navbar-upper">
+      <!-- Left: Logo and Text -->
+      <div class="d-flex align-items-center">
+        <!-- Logo -->
+        <a class="navbar-brand" href="/home">
+          <img src="images/Image 4.png" alt="Government Logo">
+        </a>
+        <!-- Navbar Title -->
+        <div class="navbar-text">
+          <div>Government of National Capital Territory</div>
+          <div>राष्ट्रीय राजधानी क्षेत्र दिल्ली सरकार</div>
+        </div>
+      </div>
+      <!-- Right: Two Images -->
+      <div class="navbar-upper-right d-flex align-items-center">
+        <img src="images/Image 6.png" alt="Image 1">
+        <img src="images/Frame 60.png" alt="Image 2">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Lower Navbar: Logo, Centered Links, and Login in Hamburger -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary down_nav">
+    <div class="container-fluid">
+      <!-- Left: Logo -->
+      <a class="navbar-brand" href="/home">
+        <img src="images/SarvaSvasthaLogo.svg" alt="Government Logo">
+      </a>
+
+      <!-- Toggler/collapsable Button for mobile view -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Center and Right: Navbar Links in Collapsible Menu -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/appointment">OPD Registration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/bedavailability">Bed Availability</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Help/Support</a>
+          </li>
+          <!-- Login Button inside the collapsible menu for smaller screens -->
+          <li class="nav-item mt-2 mt-lg-0">
+            <a class="btn btn-custom nav-link mobile-only inside_login" id="inside_button" href="/loginpage">Login/Register</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right: Login Button for larger screens -->
+      <a class="btn btn-custom nav-link desktop-only desk_btn" href="/loginpage">Login/Register</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="main-container">
+      <div class="up">
+        <div class="form-section">
+          <label for="hospital"><span class="red">*</span>Hospital</label>
+          <select id="hospital">
+            <option value="">Select Hospital</option>
+            <option value="apollo">Apollo Hospital</option>
+            <option value="fortis">Fortis Hospital</option>
+            <option value="max">Max Hospital</option>
+          </select>
+          <button class="check-btn">Check Availability</button>
+        </div>
+        <div class="image-section">
+          <img src="images/hospital.png" alt="Hospital" class="hospital-image">
+        </div>
+      </div>
+
+
+
+        <h2>Recommended:</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Apollo Hospital</h3>
+            <p>Address: 59 street, Manik bagh, Bilawali sector, near IET campus, New Delhi</p>
+            <p>Contact: 00XX00XX</p>
+          </div>
+          <div class="card">
+            <h3>Apollo Hospital</h3>
+            <p>Address: 59 street, Manik bagh, Bilawali sector, near IET campus, New Delhi</p>
+            <p>Contact: 00XX00XX</p>
+          </div>
+          <div class="card">
+            <h3>Apollo Hospital</h3>
+            <p>Address: 59 street, Manik bagh, Bilawali sector, near IET campus, New Delhi</p>
+            <p>Contact: 00XX00XX</p>
+          </div>
+        </div>
+        <a href="#" class="see-more">See more</a>
+
+
+
+    </div>
+    <!-- <div class="recommended-section">
+      <h2>Recommended:</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Apollo Hospital</h3>
+          <p>Address: 59 street, Manik bagh, Bilawali sector, near IET campus, New Delhi</p>
+          <p>Contact: 00XX00XX</p>
+        </div>
+        <div class="card">
+          <h3>Apollo Hospital</h3>
+          <p>Address: 59 street, Manik bagh, Bilawali sector, near IET campus, New Delhi</p>
+          <p>Contact: 00XX00XX</p>
+        </div>
+        <div class="card">
+          <h3>Apollo Hospital</h3>
+          <p>Address: 59 street, Manik bagh, Bilawali sector, near IET campus, New Delhi</p>
+          <p>Contact: 00XX00XX</p>
+        </div>
+      </div>
+      <a href="#" class="see-more">See more</a>
+    </div> -->
+  </main>
+
+  <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<!-- Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

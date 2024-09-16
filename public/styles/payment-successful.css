@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --seccolor : #ebebeb;
+    --color : #004094;
+    --black : #000000;
+    --green : #69D876;
+    font-family: 'Poppins';
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--seccolor);
+    color: #333;
+}
+
+
+.navbar-brand img {
+    height: 50px;
+    /* Adjust logo height */
+}
+
+.navbar-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 16px;
+}
+
+.btn-custom {
+    border-color: white;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.navbar-upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-upper-right img {
+    height: 50px;
+    /* Adjust image height */
+    margin-left: 15px;
+}
+
+.navbar-lower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-center {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+
+@media (max-width: 992px) {
+    .navbar-upper-right img {
+        display: none;
+    }
+
+    .navbar-text {
+        font-size: 0.95rem;
+    }
+
+    .navbar-center {
+        order: 2;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar-brand img {
+        height: 35px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        /* Center align the nav items */
+        width: 100%;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+        /* Center align the collapse content */
+    }
+
+    .btn-custom.desktop-only {
+        display: none;
+        /* Hide the desktop button on smaller screens */
+    }
+
+    .btn-custom.mobile-only {
+        display: inline-block;
+        /* Show the mobile button on smaller screens */
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 993px) {
+    .btn-custom.mobile-only {
+        display: none;
+        /* Hide the mobile button on larger screens */
+    }
+
+    .btn-custom.desktop-only {
+        display: inline-block;
+        /* Show the desktop button on larger screens */
+    }
+}
+#inside_button {
+    color: var(--color) !important;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color:  #EBEBEB;
+    color: #333;
+}
+
+#opdreg {
+    position: relative;
+    width: 425px;
+    height: 66px;
+    top: 20px;
+    left:50px;
+    font-family: Roboto;
+line-height: 65.63px;
+text-align: left;
+}
+
+.flex-container{
+    background-color: #FFFFFF;
+    position: relative;
+    display: flex;
+    width: 1398px;
+height: 780px;
+top: 29px;
+left: 50px;
+gap: 0px;
+border-radius: 8px 0px 0px 0px;
+opacity: 0px;
+
+}
+
+.flex2{
+    width:732px;
+height:79px;
+top: 297px;
+left: 85px;
+padding: 21px 190px 21px 190px;
+gap: 8px;
+border-radius: 14px 0px 0px 0px;
+border: 0px 0px 3px 0px;
+opacity: 0px;
+}
+.flex3 {
+    position: relative;
+    width: 691px;
+    height: 79px;
+    top: -873px;
+    left: 543px;
+    padding: 21px 190px 21px 190px;
+    gap: 8px;
+    border-radius: 0px 14px 0px 0px;
+    border: 0px 0px 2px 0px;
+    opacity: 0px;
+}
+.newapp{
+    font-size: 1.5rem;
+}
+
+.hr1{
+    position: relative;
+    border-top:3px solid rgb(32, 32, 155);
+    width: 662px;
+    left:-169px;
+}
+
+.hr2{
+    position: relative;
+    border-top:3px solid rgb(213, 213, 213);
+    width: 694px;
+    left:-239px;
+
+}
+
+.main{
+    position: relative;
+    top:300px;
+    left:200px;
+    height: 100px;
+    width:100px;
+}
+.selhosp{
+    position: relative;
+    top:-110px;
+    left:-42px;
+}
+
+.perdetail{
+    position: relative;
+    top:-132px;
+    left:210px;
+}
+
+.payment{
+    position: relative;
+    top:-154px;
+    left:490px;
+}
+.circle1,.circle2,.circle3 {
+    height: 48px;
+    width: 48px;
+    background-color: #084C9D;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight:300;
+}
+
+.circle1{
+    position: relative;
+    top:21px;
+    left:-103px;
+    background-color:#898989;}
+
+.circle2{
+    position: relative;
+    top: -25px;
+    left:135px;
+    background-color: #898989;
+    
+}
+.circle3{
+    position: relative;
+    top:-70px;
+    left:415px;
+    background-color: #084C9D;
+}
+
+.img{
+    position: relative;
+    top:179px;
+    left:-24px;
+    height: 320px;
+    width: 404px;
+}
+
+.para{
+    display: inline;
+    position: relative;
+    top:185px;
+    left:100px;
+}
+
+.line1,.line2,.line3{
+    width: 476px;
+    position: relative;
+    top:-2px;
+    left:-130px;
+}
+.bi 
+{
+    color: #084C9D;
+    position: relative;
+    top: -79px;
+    left:-107px;
+}
+
+.appconfirmed{
+    color: #084C9D;
+    font-size: 30px;
+    font-weight: bold;
+position: relative;
+top:-129px;
+left:-37px;
+width:450px;
+}
+
+.invoice{
+    font-size:23px;
+    width:447px;
+    position:relative;
+    top:-76px;
+    left:-79px;
+}
+
+.hospital,.doctor,.appdte{
+    font-weight:600;
+    position: relative;
+    top:-39px;
+    left:-72px;
+font-size: large;
+}
+
+.hname,.dname,.aname{
+    position: relative;
+    top:-64px;
+    left:90px;
+}
+
+.reminder{
+    font-weight: 600;
+    position:relative;
+    background-color: #FCEDA5;
+    width:537px;
+    height:177px;
+    top: -32px;
+    left: -112px;
+    padding: 21px 190px 21px 190px;
+    gap: 8px;
+    border-radius: 14px 14px 14px 14px;
+    border: 0px 0px 3px 0px;
+    opacity: 0px
+}
+
+.l1,.l2,.l3{
+    position: relative;
+    top:14px;
+    left:-125px;
+    width:390px;
+    height: 100px;
+}
