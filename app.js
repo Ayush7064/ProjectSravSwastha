@@ -15,7 +15,7 @@ app.use(express.json());
 
 
 
-const MONGO_URL = "mongodb://127.0.0.1:27017/backend";
+const MONGO_URL = "mongodb+srv://ayushkasera7064:Mr4CtXBS28OHuMl3@cluster0.xtvw5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 main()
   .then(()=>{

@@ -11,7 +11,7 @@ main().then(()=>{
     console.log(err);
 })
 async function main(){
-mongoose.connect('mongodb://127.0.0.1:27017/backend');
+mongoose.connect('mongodb+srv://ayushkasera7064:Mr4CtXBS28OHuMl3@cluster0.xtvw5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
 }
 
 const addHospital=async()=>{
