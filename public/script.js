@@ -61,7 +61,7 @@ function submitForm(event) {
   console.log(formData);
   
   // Send data to backend using fetch
-  fetch("http://localhost:8080/hospital", { // Use the correct backend URL
+  fetch("https://projectsravswastha.onrender.com/hospital", { // Use the correct backend URL
     method: "POST",
     headers: {
       "Content-Type": "application/json"
